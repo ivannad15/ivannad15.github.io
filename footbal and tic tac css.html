@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Borde con Imagen Repetida</title>
+<style>
+  /* Contenedor principal */
+  #contenedor {
+    width: 100vw; /* Ancho al 100% del viewport */
+    height: 100vh; /* Altura al 100% del viewport */
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Imagen de fondo */
+  #contenedor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://ivannad15.github.io/football_field.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    filter: grayscale(100%); /* Aplica el filtro de escala de grises */
+  }
+
+  /* Borde con imagen repetida */
+  #contenedor::after {
+    content: "";
+    position: absolute;
+    top: 27px; /* Desplazamiento del borde superior */
+    left: 27px; /* Desplazamiento del borde izquierdo */
+    right: 27px; /* Desplazamiento del borde derecho */
+    bottom: 27px; /* Desplazamiento del borde inferior */
+    border: 27px solid transparent; /* Borde transparente */
+    border-image: url('https://ivannad15.github.io/tic-tac-toe.png') 27 repeat; /* Imagen de borde */
+    filter: grayscale(100%); /* Aplica el filtro de escala de grises */
+  }
+</style>
+</head>
+<body>
+  <!-- Contenedor principal -->
+  <div id="contenedor"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen con fondo y transición</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100%;
+      background: linear-gradient(to bottom, hsl(270, 100%, 50%), hsl(300, 100%, 50%));
+    }
+
+    img {
+      display: block;
+      -webkit-user-select: none;
+      margin: auto;
+      background-color: hsl(0, 0%, 90%);
+      transition: background-color 300ms;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://ivannad15.github.io/seagull.png" alt="Seagull">
+</body>
+</html>
