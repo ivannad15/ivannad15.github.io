@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact of the Andes Accident</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FCEDED; /* Changed to background color #FCEDED */
+        }
+
+        header {
+            background-color: #A3585D;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content h2 {
+            text-align: center;
+            color: #A3585D; /* Changed to text color #A3585D */
+        }
+
+        .content p {
+            max-width: 800px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .simple-list {
+            margin-bottom: 20px;
+        }
+
+        .simple-list li {
+            margin-bottom: 5px;
+        }
+
+        .complex-list {
+            margin-bottom: 20px;
+        }
+
+        .complex-list li {
+            margin-bottom: 5px;
+            margin-left: 20px; /* Added left margin for nesting */
+        }
+
+        footer {
+            background-color: #A3585D;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Form styles */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #A3585D;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #87394a;
+        }
+
+        /* Image style */
+        .andes-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Impact of the Andes Accident</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">History</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="rescue.html">Rescue</a></li>
+                <li><a href="survivors.html">Survivors</a></li>
+                <li><a href="gallery.html">Gallery</a></li> <!-- New page -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Impact of the plane</h2>
+            <img class="andes-image" src="https://www.revistagente.com/wp-content/uploads/2024/01/Tragedia-de-los-Andes-1-1.jpg" alt="Andes Accident Image">
+            <p> Approximately an hour after takeoff, the pilot notified air controllers that he was flying over the pass, and shortly thereafter he radioed that he had reached Curicó, Chile, some 110 miles (178 km) south of Santiago, and had turned north. The pilot, however, had misjudged the location of the aircraft, which was still in the Andes. Unaware of the mistake, controllers cleared him to begin descending in preparation for landing. Shortly thereafter, the Chilean control tower was unable to contact the plane.</p>
+            <p>At approximately 3:30 PM on October 13 the aircraft struck a mountain, losing its right wing and then its left wing before crashing into a remote valley of Argentina near the Chilean border. A search for the missing plane was launched, but it soon became clear that the last reported location was incorrect. Rescue efforts shifted to the Andes, and the survivors later reported spotting several planes. However, the snow-covered mountains made detection of the white plane difficult. Furthermore, the harsh environment led many to believe that there were no survivors. After eight days, the search was called off, though later rescue efforts were undertaken by family members.</p>
+            
+            <!-- Simple List -->
+            <div class="simple-list">
+                <h3>Efects of the Accident</h3>
+                <ul>
+                    <li>Questioning ethics in extreme situations.</li>
+                    <li>Increased awareness of aviation safety.</li>
+                    <li>Reforms in emergency and rescue protocols.</li>
+                </ul>
+            </div>
+
+            <!-- Quiz About the Impact! (you can do it if you are bored) -->
+            <h3>Quiz About the Impact! (you can do it if you are bored)</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age"><br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location"><br>
+                <label for="impact">How do you think the Andes accident impacted society?</label><br>
+                <textarea id="impact" name="impact" rows="4" cols="50" required></textarea><br><br>
+                <label for="recommendations">What recommendations would you make to avoid similar incidents in the future?</label><br>
+                <textarea id="recommendations" name="recommendations" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- Send your comments! -->
+            <h3>Send your comments!</h3>
+            <form action="#" method="post">
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+                <label for="name">Other:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Other:</label>
+                <input type="email" id="email" name="email" required><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Andes Accident</p>
+    </footer>
+</body>
+</html>
